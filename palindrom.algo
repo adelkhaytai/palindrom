@@ -1,0 +1,12 @@
+PROCEDURE palindrom(x,y;INTEGER,word:STRING[50])
+BEGIN
+    IF (word.length = 0 OR x = y) THEN
+    Write("it's palnirome")
+    ELSE
+    IF (word[x] = word[y]) THEN
+    palindrom(x+1,y-1, word)
+    ELSE
+    Write("it's nit palindrome")
+    END_IF
+    END_IF
+END
